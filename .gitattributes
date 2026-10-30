@@ -1,0 +1,10 @@
+# 统一换行符处理：仓库内存 LF，Windows 下检出为 CRLF
+* text=auto
+
+# Windows 批处理必须是 CRLF，否则可能无法执行
+*.bat text eol=crlf
+
+# 二进制文件不做任何转换
+*.png binary
+*.bmp binary
+*.zip binary

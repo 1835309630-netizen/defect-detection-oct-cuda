@@ -1,0 +1,5 @@
+# 本次验证环境；仅构建机需要。不要同时安装 opencv-python 和 headless。
+numpy==2.0.2
+opencv-python-headless==5.0.0.93
+Pillow==12.1.0
+PyInstaller==6.21.0

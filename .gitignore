@@ -1,0 +1,75 @@
+# ============================================================
+# 本仓库只上传「源码 + 文档」。
+# 原始数据、标定参数、编译产物、第三方软件一律忽略：
+# 它们体积大（本目录共约 4.8 GB），而且多来自课程提供，不适合公开。
+# ============================================================
+
+# ---- 1. 编译 / 打包产物 ----
+_internal/
+_internal.bak/
+dist/
+build/
+obj/
+bin/
+__pycache__/
+*.pyc
+*.pyd
+*.dll
+*.exe
+*.pdb
+*.lib
+*.exp
+*.obj
+*.ilk
+*.deps.json
+*.runtimeconfig.json
+
+# ---- 2. 数据与标定文件（体积大 / 来自课程提供）----
+*.dat
+*.mat
+*.bin
+*.tif
+*.tiff
+*.bmp
+*.zip
+*.7z
+*.rar
+
+# ---- 3. 第三方软件 ----
+Fiji.app/
+
+# ---- 4. 临时工作区、备份、旧副本 ----
+_work/
+原来的代码 - 副本/
+*.bak
+*.tmp
+
+# ---- 5. 现场采集/调试图片与输出图 ----
+_现场调试_原图/
+_现场调试_结果图/
+_验证_没检出/
+B_Scan/image_*/
+OCT_Bscan_Projects/*/cuda/image_e3/
+OCT_Bscan_Projects/*/cuda/image_1000/
+OCT_Bscan_Projects/*/matlab_benchmark/
+OCT_Bscan_Projects/*/cuda/data/
+
+# ---- 6. 根目录下的杂项扫描结果 ----
+/scan_*.csv
+/scan_drive.ps1
+/_metrics*.txt
+/_avg.txt
+
+# ---- 7. 第三方 SDK 二进制、运行日志 ----
+*.cti
+*.log
+
+# 发布包只保留使用说明，其余（运行时副本、模板副本、GenTL 等）都不上传
+/新缺陷检测/缺陷检测程序/*
+!/新缺陷检测/缺陷检测程序/使用说明.md
+
+# 老师提供的 MATLAB 原始脚本，版权归老师，不公开
+OCT_Bscan_Projects/*/getOCTimage4*.m
+
+# ---- 例外：这张对比图是对外展示的证据，保留 ----
+!OCT_Bscan_Projects/1000x1000任务/comparison_1000.bmp
